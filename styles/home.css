@@ -7,6 +7,10 @@ body {
     align-items: center;
 }
 
+h1, h2, h3 {
+    font-weight: 400;
+}
+
 p {
     margin: 0px;
     font-family: Outfit, Arial;
@@ -17,7 +21,6 @@ p {
 }
 
 li {
-    color: hsl(332, 51%, 32%);
     margin: 0px;
 }
 
@@ -47,6 +50,9 @@ li + li {
 
 .text-title {
     margin-bottom: 16px;
+    color: hsl(24, 5%, 18%);
+    font-size: 42px;
+    margin-top: 30px;
 }
 
 .text-dish-details {
@@ -59,6 +65,7 @@ li + li {
     padding: 24px;
     border-radius: 12px;
     margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .text-title-preparation-time {
@@ -69,15 +76,39 @@ li + li {
     font-weight: 600;
 }
 
-.text-details-preparation-time {
+.bpoints-details-preparation-time {
     line-height: 28px;
     margin: 0px 0px;
     padding: 0px 20px;
-    font-size: 14px;
+}
+
+.bullet-details {
+    color: hsl(332, 51%, 32%);
+    font-size: 12px;
 }
 
 .text-bold-keyword {
     font-weight: 600;
+    margin-left: 16px;
+}
+
+.text-section-title {
+    color: hsl(14, 45%, 36%);
+    font-size: 26px;
+}
+
+.bpoints-ingredient-list {
+    padding: 0px 8px;
+    margin: 12px;
+    line-height: 28px;
+}
+
+.bullet-ingredients {
+    color: hsl(14, 45%, 36%);
+    font-size: 12px;
+}
+
+.bullet-ingredients > p {
     margin-left: 16px;
 }
 
