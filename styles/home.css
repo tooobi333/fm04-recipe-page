@@ -7,7 +7,7 @@ body {
     align-items: center;
 }
 
-p, li {
+p {
     margin: 0px;
     font-family: Outfit, Arial;
     font-weight: 400;
@@ -16,9 +16,13 @@ p, li {
     color: hsl(30, 10%, 34%);
 }
 
-ul {
-    padding : 0px 18px;
+li {
+    color: hsl(332, 51%, 32%);
     margin: 0px;
+}
+
+li + li {
+    margin-top: 6px;
 }
 
 .container-main {
@@ -47,6 +51,7 @@ ul {
 
 .text-dish-details {
     margin-top: 0px;
+    margin-bottom: 32px;
 }
 
 .container-preparation-time {
@@ -66,11 +71,14 @@ ul {
 
 .text-details-preparation-time {
     line-height: 28px;
+    margin: 0px 0px;
+    padding: 0px 20px;
+    font-size: 14px;
 }
 
 .text-bold-keyword {
     font-weight: 600;
-    margin-left: 24px;
+    margin-left: 16px;
 }
 
 .attribution { 
