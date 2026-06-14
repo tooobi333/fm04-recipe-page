@@ -1,14 +1,23 @@
 body {
     font-family: Young Serif, Outfit, Arial;
     background-color: hsl(30, 54%, 90%);
-    display: flex;
-    flex-direction: column;
     font-weight: 400;
-    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0px;
+    }
 }
 
 h1, h2, h3 {
     font-weight: 400;
+}
+
+h2 {
+    margin: 20px 0px;
 }
 
 p {
@@ -20,6 +29,10 @@ p {
     color: hsl(30, 10%, 34%);
 }
 
+ol {
+    font-family: Outfit, Arial;
+}
+
 li {
     margin: 0px;
 }
@@ -28,15 +41,46 @@ li + li {
     margin-top: 6px;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 28px;
+}
+
+@media (max-width: 480px) {
+    section {
+        margin: 0px 32px;
+    }
+}
+
+
+
 .container-main {
     background-color: white;
-    margin: 88px 0px;
+    margin: 88px auto auto;
     padding: 44px;
-    width: 700px;
+    width: 80%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    margin-bottom: 88px;
 }
+
+@media (max-width: 480px) {
+    .container-main {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        border-radius: 0px;
+        padding-bottom: 32px;
+    }
+}
+
+
 
 .image-dish {
     border-radius: 20px;
@@ -44,15 +88,31 @@ li + li {
     transition: box-shadow 0.3s;
 }
 
+@media (max-width: 480px) {
+    .image-dish {
+        border-radius: 0px;
+        width: 100vw;
+        margin: 0px;
+    }
+}
+
 .image-dish:hover {
     box-shadow: 0px 0px 12px hsl(30, 18%, 87%);
 }
+
+
 
 .text-title {
     margin-bottom: 16px;
     color: hsl(24, 5%, 18%);
     font-size: 42px;
     margin-top: 30px;
+}
+
+@media (max-width: 480px) {
+    .text-title {
+        margin: 30px 16px 32px 32px;
+    }
 }
 
 .text-dish-details {
@@ -76,7 +136,7 @@ li + li {
     font-weight: 600;
 }
 
-.bpoints-details-preparation-time {
+.list-details-preparation-time {
     line-height: 28px;
     margin: 0px 0px;
     padding: 0px 20px;
@@ -87,17 +147,22 @@ li + li {
     font-size: 12px;
 }
 
-.text-bold-keyword {
-    font-weight: 600;
+.bullet-details > p {
     margin-left: 16px;
 }
+
+.text-bold-keyword {
+    font-weight: 600;
+}
+
+
 
 .text-section-title {
     color: hsl(14, 45%, 36%);
     font-size: 26px;
 }
 
-.bpoints-ingredient-list {
+.list-ingredient {
     padding: 0px 8px;
     margin: 12px;
     line-height: 28px;
@@ -108,9 +173,60 @@ li + li {
     font-size: 12px;
 }
 
-.bullet-ingredients > p {
+
+
+.bullet-ingredients > p, .bullet-instruction > p {
     margin-left: 16px;
 }
+
+
+
+.list-instructions {
+    padding: 0px 8px;
+    margin: 12px;
+    line-height: 28px;
+}
+
+.bullet-instruction {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.text-bold-instruction {
+    font-weight: 600;
+}
+
+
+
+.table-nutrition {
+    margin-top: 32px;
+}
+
+.div-data-nutrition {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.div-data-nutrient {
+    flex: 1;
+    padding-left: 32px;
+}
+
+.div-data-value {
+    flex: 1;
+}
+
+.div-data-value > p {
+    font-weight: 600;
+    color: hsl(14, 45%, 36%)
+}
+
+.line-table-divider {
+    margin: 12px 0px;
+}
+
+
 
 .attribution { 
     font-size: 11px;
